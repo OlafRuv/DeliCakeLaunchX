@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles.css">
+    <title>Deli Cake</title>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <a class="" href=""><img src="./" alt="Logo.png"> </a>
+            <a class="active" href="#Inicio">Inicio</a>
+            <a class="" href="#Nosotros">Nosotros</a>
+            <a class="" href="#Clientes">Clientes</a>
+            <a class="" href="#Productos">Productos</a>
+            <a class="" href="#Pedido">Hacer un Pedido</a>
+            <a class="" href="#Contacto">Contacto</a>
+        </div>
+    </header>
+
+      
+    <div style="padding:2rem;">
+    
+    <h1 class="title">DeliCake </h1>
+    <img src="./assets/img/logo.png" alt="logo" width="180px">
+
+    <section class="white-section" id="#Nosotros" >
+        <h2>Nosotros</h2>
+        <p>
+            Nisi ex Lorem culpa dolor reprehenderit eiusmod excepteur. Magna adipisicing dolore incididunt ullamco aliquip. Amet eu cillum ipsum dolor minim. Aute dolore minim tempor commodo sit incididunt labore exercitation aliquip ea ipsum. Do et qui commodo id voluptate. Et dolor adipisicing occaecat occaecat labore proident ex nulla in irure in esse labore. Excepteur in enim pariatur aliqua proident et cupidatat elit quis aliqua voluptate excepteur sit.
+            <br>
+            Minim veniam commodo labore proident id. Lorem est nulla nisi sit Lorem est duis irure fugiat veniam cillum qui consequat. Consectetur nostrud ea laboris eu proident non deserunt exercitation fugiat. Anim cupidatat est adipisicing velit laboris cillum. Qui ea Lorem laboris commodo eiusmod laboris eu ut occaecat do mollit deserunt adipisicing.
+        </p>
+    </section>
+    
+    <section class="" id="#Clientes" >
+        <h2>Clientes</h2>
+        <div style="display:flex; justify-content: center;">
+
+            <div class="card-glass wrapper">
+                <p>
+                    Minim veniam commodo labore proident id. Lorem est nulla nisi sit Lorem est duis irure fugiat veniam cillum qui consequat. Consectetur nostrud ea laboris eu proident non deserunt exercitation fugiat. Anim cupidatat est adipisicing velit laboris cillum. Qui ea Lorem laboris commodo eiusmod laboris eu ut occaecat do mollit deserunt adipisicing.
+                </p>
+            </div>
+            <div class="card-glass wrapper">
+                <p>
+                    Minim veniam commodo labore proident id. Lorem est nulla nisi sit Lorem est duis irure fugiat veniam cillum qui consequat. Consectetur nostrud ea laboris eu proident non deserunt exercitation fugiat. Anim cupidatat est adipisicing velit laboris cillum. Qui ea Lorem laboris commodo eiusmod laboris eu ut occaecat do mollit deserunt adipisicing.
+                </p>
+            </div>
+            <div class="card-glass wrapper">
+                <p>
+                    Minim veniam commodo labore proident id. Lorem est nulla nisi sit Lorem est duis irure fugiat veniam cillum qui consequat. Consectetur nostrud ea laboris eu proident non deserunt exercitation fugiat. Anim cupidatat est adipisicing velit laboris cillum. Qui ea Lorem laboris commodo eiusmod laboris eu ut occaecat do mollit deserunt adipisicing.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="white-section">
+        <table>
+            <tr>
+                <th>
+                    <h2>Tipos de pasteles</h2>
+                </th>
+                <th>
+                    <h2>Toppings</h2>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <p>Cremosa Vainilla       .............................. $270</p>
+                        </li>
+                        <li>
+                            <p>Chocolate Extreme    .............................. $300</p>
+                        </li>
+                        <li>
+                            <p>Muchas Leches        .............................. $250</p>
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <p>Salsa MilkyWay       .............................. $80</p>
+                        </li>
+                        <li>
+                            <p>Salsa Kinder         .............................. $100</p>
+                        </li>
+                        <li>
+                            <p>Snickers             .............................. $50</p>
+                        </li>
+                        <li>
+                            <p>Brownies             .............................. $50</p>
+                        </li>
+                        <li>
+                            <p>M&Ms                 .............................. $30</p>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <section style="display: flex; justify-content: center;">
+        <div class="card">
+            <h2>Realiza tu pedido</h2>
+            <form action="pedido.js">
+                Ingresa tu nombre:
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+                Ingresa tu Número Telefónico:
+                <input type="number" id="Telefono" name="Telefono" placeholder="Telefono"><br>
+                Ingresa tu Email:
+                <input type="email" id="Email" name="Email" placeholder="correo@ejemplo.com"><br>
+                Describe tu pastel:
+                <textarea name="Descripcion" id="Descripcion" cols="30" rows="10">Ingresa la descripción de la estética de tu pastel :)</textarea><br>
+                Selecciona el sabor:
+                <select name="Sabor" id="Sabor">
+                    <option value="flav1">Cremosa Vainilla</option>
+                    <option value="flav2">Chocolate Extreme</option>
+                    <option value="flav3">Muchas Leches</option>
+                </select><br>
+                Selecciona los extras:<br>
+                <input type="checkbox" id="adorno1" name="adorno1" value="Crema">
+                <lable for="Crema">Salsa MilkyWay</lable>
+                <input type="checkbox" id="adorno2" name="adorno2" value="Cerezas">
+                <lable for="Crema">Salsa Kinder </lable>
+                <input type="checkbox" id="adorno3" name="adorno3" value="ChispasChocolate">
+                <lable for="Crema">Snickers </lable>
+                <input type="checkbox" id="adorno4" name="adorno4" value="ChispasColores">
+                <lable for="Crema">Brownies </lable>
+                <input type="checkbox" id="adorno4" name="adorno4" value="ChispasColores">
+                <lable for="Crema">M&Ms   </lable>
+                <br><br>
+    
+                <input type="reset">
+                <input type="submit">
+                <br>
+        </div>
+    </section>
+
+
+    </form>
+
+
+
+        
+    </div>
+</body>
+</html>
