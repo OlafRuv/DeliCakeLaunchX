@@ -4,158 +4,171 @@
         <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Deli Cake</title>
 </head>
 <body>
     <header>
         <div class="topnav">
-            <a class="" href=""><img src="./Assets/LOGO_BIRTHDAY_CAKE_400px.gif" alt="Logo.png" style="width: 2rem;"> </a>
-            <a class="active" href="#Inicio">Inicio</a>
-            <a class="" href="#Stock">Stock</a>
-            <a class="" href="#Pedidos">Pedidos</a>
+            <a class="" href=""><img src="./Assets/LOGO_BIRTHDAY_CAKE_400px.gif" alt="Logo.png" style="width: 20px;"> </a>
+            <a class="active" href="./indexPaseteleria.html#Inicio">Inicio</a>
+            <a class="" href="./indexPaseteleria.html#Stock">Stock</a>
+            <a class="" href="./indexPaseteleria.html#Pedidos">Pedidos</a>
         </div>
     </header>
 
-      
-    <div style="padding:2rem;">
-    
-        <div style="display:flex; justify-content: center;">
-        
-    
-            
-            <div style="display: inline-block; vertical-align: center;">
-                <h1 class="title" style="color: whitesmoke;">ADMIN </h1>
+    <section id="Inicio">
+        <div class="flex-container">
+            <div>
+                <h1 class="title pink">Admin</h1>
+            </div>    
+            <div>
+                <img src="./Assets/Delicake.png" alt="logo" id="logo-medium">
             </div>
-            <div style="display: inline-block;">
-                <img src="./Assets/Delicake.png" alt="logo" width="200px">
-            </div>
-            
-    </div>
+            <div>
+                <img src="./Assets/arrow.gif" alt="arrow" style="width: 50px;">
+            </div>       
+        </div>
+    </section>
 
-    <h1 class="center">Stock</h1>
-    <section class="white-section">
-        <table>
-            <thead>
+
+    <section id="Stock">
+        <div class="flex-container">
+            <div class="card centered" style="width: 35%; margin: 20px;">
+                <h2 class="subtitle pink centered">Stock Sabores</h2>
+                <form action="">
+                    <label>Cremosa Vainilla</label>
+                    <input type="number" value="30" style="width: 50px;"  disabled>
+                    <label for="">kg</label>
+                    <br>
+                    <label>Chocolate Extreme</label>
+                    <input type="number" value="34" style="width: 50px;"  disabled>
+                    <label for="">kg</label>
+                    <br>
+                    <label>Muchas Leches</lab>
+                    <input type="number" value="32" style="width: 50px;"  disabled>
+                    <label for="">kg</label>                 
+                </form>
+            </div>
+            <div class="card centered" style="width: 35%; margin: 20px;">
+                <h2 class="subtitle pink centered ">Toppings</h2>
+                <form action="">
+                    <label>Salsa MilkyWay</label>
+                    <input type="number" value="27" style="width: 50px;"  disabled>
+                    <label for=""> lts</label>
+                    <br>
+                    <label>Salsa Kinder</label>
+                    <input type="number" value="10" style="width: 50px;"  disabled>
+                    <label for=""> lts</label>
+                    <br>
+                    <label>Snickers</lab>
+                    <input type="number" value="20" style="width: 50px;"  disabled>
+                    <label for=""> kg</label>
+                    <br>
+                    <label>Brownies</label>
+                    <input type="number" value="23" style="width: 50px;"  disabled>
+                    <label for=""> kg</label>
+                    <br>
+                    <label>M&Ms</label>
+                    <input type="number" value="10" style="width: 50px;"  disabled>
+                    <label for=""> kg</label>                   
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="Pedidos">
+        <h2 class="subtitle pink centered ">Pedidos</h2>
+        <div class="white-section">
+            <table id="pedidos">
                 <tr>
-                    <th colspan="2">
-                        <h2>Stock</h2>
+                    <th>
+                        Nombre
                     </th>
-                    <th colspan="2">
-                        <h2>Toppings</h2>
+                    <th>
+                        Telefono
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Descripcion
+                    </th>
+                    <th>
+                        Sabor
+                    </th>
+                    <th>
+                        Toppings
                     </th>
                 </tr>
-            </thead>
-            <tr>
-                <td>
-                    <ul>
-                        <li><p>Cremosa Vainilla</p></li>
-                        <li><p>Chocolate Extreme</p></li>
-                        <li><p>Muchas Leches</p></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><p>30 kg</p></li>
-                        <li><p>34 kg</p></li>
-                        <li><p>32 kg</p></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><p>Salsa MilkyWay</p></li>
-                        <li><p>Salsa Kinder</p></li>
-                        <li><p>Snickers</p></li>
-                        <li><p>Brownies</p></li>
-                        <li><p>M&Ms</p></li>
-                    </ul>
-                </td>
-                <td>
-                    <ul>
-                        <li><p>27 lts</p></li>
-                        <li><p>10 lts</p></li>
-                        <li><p>20 kg</p></li>
-                        <li><p>23 kg</p></li>
-                        <li><p>10 kg</p></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+                <tr>
+                    <td>
+                        Jorgito Arevalo
+                    </td>
+                    <td>
+                        3322115588
+                    </td>
+                    <td>
+                        jorgitoarevalo@gmail.com
+                    </td>
+                    <td>
+                        Pastel con forma de cabeza de Shrek
+                    </td>
+                    <td>
+                        Chocolate extreme
+                    </td>
+                    <td>
+                        M&Ms
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nombre
+                    </td>
+                    <td>
+                        Telefono
+                    </td>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        Descripcion
+                    </td>
+                    <td>
+                        Sabor
+                    </td>
+                    <td>
+                        Toppings
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
+    
+    <footer id="Footer">
+        <div class="topnav flex-container">
+            <div>
+                <a class="" href=""><img src="./Assets/output-onlinegiftools.gif" alt="Logo.png" style="width: 20px;"> </a>
+            </div>
+            <div>
+                <p>
+                    <b>Telefono:</b> 3314859674<br>
+                    <b>Dirección:</b> Libertad 1999, Col. Americana, 44160 Guadalajara, Jal.</p>
+            </div>
+            <div>
+                <a href="#instagram"><img src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png"/></a>
+                <a href="#facebook"><img src="https://img.icons8.com/ios/50/000000/facebook--v1.png"/></a>
+                <a href="#twitter"><img src="https://img.icons8.com/ios/50/000000/twitter--v1.png"/></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).on('click','header div a',function(){
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+    </script>
 
-    <h1 class="center">Pedidos</h1>
-    <section class="white-section">
-        <table id="pedidos">
-            <tr>
-                <th>
-                    Nombre
-                </th>
-                <th>
-                    Telefono
-                </th>
-                <th>
-                    Email
-                </th>
-                <th>
-                    Descripcion
-                </th>
-                <th>
-                    Sabor
-                </th>
-                <th>
-                    Toppings
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    Jorgito Arevalo
-                </td>
-                <td>
-                    3322115588
-                </td>
-                <td>
-                    jorgitoarevalo@gmail.com
-                </td>
-                <td>
-                    Pastel con forma de cabeza de Shrek
-                </td>
-                <td>
-                    Chocolate extreme
-                </td>
-                <td>
-                    M&Ms
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Nombre
-                </td>
-                <td>
-                    Telefono
-                </td>
-                <td>
-                    Email
-                </td>
-                <td>
-                    Descripcion
-                </td>
-                <td>
-                    Sabor
-                </td>
-                <td>
-                    Toppings
-                </td>
-            </tr>
-
-        </table>
-    </section>
-
-
-    </form>
-
-
-
-        
-    </div>
 </body>
 </html>
