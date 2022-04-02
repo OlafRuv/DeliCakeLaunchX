@@ -21,4 +21,4 @@ Descripción:<br>
 - La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.
 
 ## Sitio Desplegado
-- https://olafruv.github.io/DeliCakeLaunchX.github.io/
+- https://olafruv.github.io/DeliCakeLaunchX/
